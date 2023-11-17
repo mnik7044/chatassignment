@@ -1,0 +1,98 @@
+/* Add your styling here */
+
+/* Chat button styling */
+#chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #724ae8;
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+}
+
+/* Chat popup styling */
+#chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  height: 460px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  /* scrollbar */
+}
+
+#chat-header {
+  background-color: #724ae8;
+  color: white;
+  padding: 10px;
+  text-align: right;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#close-button {
+  cursor: pointer;
+}
+
+#chat-messages {
+  overflow-y: auto;
+  padding: 10px;
+  height: 77%;
+  padding-bottom: 10px;
+}
+#chat-messages > div {
+  background: #724ae8;
+  color: #fff;
+  padding: 12px 16px;
+  margin: 10px 0px;
+  width: 65%;
+  border-radius: 10px 10px 0px 10px;
+}
+#chat-messages > .msgRight {
+  margin-left: 65px;
+}
+#chat-messages > .msgLeft {
+  background: #bfbfbf;
+  color: #000;
+  border-radius: 10px 10px 10px 0px;
+}
+#message-input {
+  /* width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px; */
+  position: absolute;
+  bottom: 0;
+  width: 66%;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  border-radius: 10px 0px 0px 0px;
+  outline: none;
+}
+#message-input:focus {
+  outline: 1px solid #724ae8;
+}
+button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 21%;
+  padding: 15.5px 10px;
+  background-color: #724ae8;
+  border-radius: 0px 10px 0px 0px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}

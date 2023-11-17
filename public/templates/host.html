@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/host.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <div id="host-dashboard">
+      <div id="inbox">
+        <div id="inbox-header">Inbox</div>
+
+        <div id="chat-list"></div>
+      </div>
+      <div id="selected-chat">
+        <div id="chat-header">Chat</div>
+        <div id="chat-messages"></div>
+        <input type="text" id="reply-input" placeholder="Type your reply..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.1.2/socket.io.min.js"></script>
+    <!-- <script src="./js/chatLoader.js"></script> -->
+    <script src="../js/host.js"></script>
+  </body>
+</html>
