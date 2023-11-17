@@ -4,6 +4,7 @@ const socketIO = require("socket.io");
 const mongoose = require("mongoose");
 const getChatsRouter = require("./routes/get-chat");
 const helmet = require("helmet");
+require('dotenv').config()
 
 const {
   createTempUser,
@@ -20,7 +21,7 @@ app.use(express.json());
 
 // Connect to MongoDB
 mongoose.connect(
-  "mongodb+srv://mnik7044:Chatwidget@cluster0.zifg9xi.mongodb.net/?retryWrites=true&w=majority"
+  process.env.MONGO_URI
 );
 
 // Serve static files from the "public" directory
