@@ -29,8 +29,3 @@ This project is a simple yet effective chat widget that can be easily integrated
   - CSS: Simple styling for a clean user interface.
   - JavaScript: Handling user interactions and communication with the backend.
 
-## Installation and Setup
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
